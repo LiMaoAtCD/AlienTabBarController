@@ -19,6 +19,14 @@
 		877B8D6519AD8E4F0002FE75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877B8D4D19AD8E4F0002FE75 /* UIKit.framework */; };
 		877B8D6D19AD8E4F0002FE75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 877B8D6B19AD8E4F0002FE75 /* InfoPlist.strings */; };
 		877B8D6F19AD8E4F0002FE75 /* tabBarControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 877B8D6E19AD8E4F0002FE75 /* tabBarControllerTests.m */; };
+		877B8D7F19AD8E5C0002FE75 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 877B8D7A19AD8E5C0002FE75 /* RDVTabBar.m */; };
+		877B8D8019AD8E5C0002FE75 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877B8D7C19AD8E5C0002FE75 /* RDVTabBarController.m */; };
+		877B8D8119AD8E5C0002FE75 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 877B8D7E19AD8E5C0002FE75 /* RDVTabBarItem.m */; };
+		877B8D8519AD8F9A0002FE75 /* ALIENFirstTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877B8D8419AD8F9A0002FE75 /* ALIENFirstTabController.m */; };
+		877B8D8819AD8FAD0002FE75 /* ALIENSecondTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877B8D8719AD8FAD0002FE75 /* ALIENSecondTabController.m */; };
+		877B8D8B19AD8FBC0002FE75 /* ALIENThirdTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877B8D8A19AD8FBC0002FE75 /* ALIENThirdTabController.m */; };
+		877B8D8E19AD8FCB0002FE75 /* ALIENFourthTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877B8D8D19AD8FCB0002FE75 /* ALIENFourthTabController.m */; };
+		877B8D9019AD8FEA0002FE75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877B8D8F19AD8FEA0002FE75 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,21 @@
 		877B8D6A19AD8E4F0002FE75 /* tabBarControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tabBarControllerTests-Info.plist"; sourceTree = "<group>"; };
 		877B8D6C19AD8E4F0002FE75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		877B8D6E19AD8E4F0002FE75 /* tabBarControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabBarControllerTests.m; sourceTree = "<group>"; };
+		877B8D7919AD8E5C0002FE75 /* RDVTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBar.h; sourceTree = "<group>"; };
+		877B8D7A19AD8E5C0002FE75 /* RDVTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBar.m; sourceTree = "<group>"; };
+		877B8D7B19AD8E5C0002FE75 /* RDVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarController.h; sourceTree = "<group>"; };
+		877B8D7C19AD8E5C0002FE75 /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
+		877B8D7D19AD8E5C0002FE75 /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
+		877B8D7E19AD8E5C0002FE75 /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
+		877B8D8319AD8F9A0002FE75 /* ALIENFirstTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALIENFirstTabController.h; sourceTree = "<group>"; };
+		877B8D8419AD8F9A0002FE75 /* ALIENFirstTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALIENFirstTabController.m; sourceTree = "<group>"; };
+		877B8D8619AD8FAD0002FE75 /* ALIENSecondTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALIENSecondTabController.h; sourceTree = "<group>"; };
+		877B8D8719AD8FAD0002FE75 /* ALIENSecondTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALIENSecondTabController.m; sourceTree = "<group>"; };
+		877B8D8919AD8FBC0002FE75 /* ALIENThirdTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALIENThirdTabController.h; sourceTree = "<group>"; };
+		877B8D8A19AD8FBC0002FE75 /* ALIENThirdTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALIENThirdTabController.m; sourceTree = "<group>"; };
+		877B8D8C19AD8FCB0002FE75 /* ALIENFourthTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALIENFourthTabController.h; sourceTree = "<group>"; };
+		877B8D8D19AD8FCB0002FE75 /* ALIENFourthTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALIENFourthTabController.m; sourceTree = "<group>"; };
+		877B8D8F19AD8FEA0002FE75 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +100,15 @@
 		877B8D3D19AD8E4F0002FE75 = {
 			isa = PBXGroup;
 			children = (
+				877B8D8319AD8F9A0002FE75 /* ALIENFirstTabController.h */,
+				877B8D8419AD8F9A0002FE75 /* ALIENFirstTabController.m */,
+				877B8D8619AD8FAD0002FE75 /* ALIENSecondTabController.h */,
+				877B8D8719AD8FAD0002FE75 /* ALIENSecondTabController.m */,
+				877B8D8919AD8FBC0002FE75 /* ALIENThirdTabController.h */,
+				877B8D8A19AD8FBC0002FE75 /* ALIENThirdTabController.m */,
+				877B8D8C19AD8FCB0002FE75 /* ALIENFourthTabController.h */,
+				877B8D8D19AD8FCB0002FE75 /* ALIENFourthTabController.m */,
+				877B8D8219AD8F360002FE75 /* Vender */,
 				877B8D4F19AD8E4F0002FE75 /* tabBarController */,
 				877B8D6819AD8E4F0002FE75 /* tabBarControllerTests */,
 				877B8D4819AD8E4F0002FE75 /* Frameworks */,
@@ -109,6 +141,7 @@
 			children = (
 				877B8D5819AD8E4F0002FE75 /* ALIENAppDelegate.h */,
 				877B8D5919AD8E4F0002FE75 /* ALIENAppDelegate.m */,
+				877B8D8F19AD8FEA0002FE75 /* Main.storyboard */,
 				877B8D5B19AD8E4F0002FE75 /* Images.xcassets */,
 				877B8D5019AD8E4F0002FE75 /* Supporting Files */,
 			);
@@ -142,6 +175,27 @@
 				877B8D6B19AD8E4F0002FE75 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		877B8D7819AD8E5C0002FE75 /* RDVTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				877B8D7919AD8E5C0002FE75 /* RDVTabBar.h */,
+				877B8D7A19AD8E5C0002FE75 /* RDVTabBar.m */,
+				877B8D7B19AD8E5C0002FE75 /* RDVTabBarController.h */,
+				877B8D7C19AD8E5C0002FE75 /* RDVTabBarController.m */,
+				877B8D7D19AD8E5C0002FE75 /* RDVTabBarItem.h */,
+				877B8D7E19AD8E5C0002FE75 /* RDVTabBarItem.m */,
+			);
+			path = RDVTabBarController;
+			sourceTree = "<group>";
+		};
+		877B8D8219AD8F360002FE75 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				877B8D7819AD8E5C0002FE75 /* RDVTabBarController */,
+			);
+			name = Vender;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				877B8D9019AD8FEA0002FE75 /* Main.storyboard in Resources */,
 				877B8D5419AD8E4F0002FE75 /* InfoPlist.strings in Resources */,
 				877B8D5C19AD8E4F0002FE75 /* Images.xcassets in Resources */,
 			);
@@ -240,8 +295,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				877B8D8119AD8E5C0002FE75 /* RDVTabBarItem.m in Sources */,
+				877B8D8019AD8E5C0002FE75 /* RDVTabBarController.m in Sources */,
+				877B8D8E19AD8FCB0002FE75 /* ALIENFourthTabController.m in Sources */,
+				877B8D8519AD8F9A0002FE75 /* ALIENFirstTabController.m in Sources */,
+				877B8D8B19AD8FBC0002FE75 /* ALIENThirdTabController.m in Sources */,
 				877B8D5A19AD8E4F0002FE75 /* ALIENAppDelegate.m in Sources */,
+				877B8D8819AD8FAD0002FE75 /* ALIENSecondTabController.m in Sources */,
 				877B8D5619AD8E4F0002FE75 /* main.m in Sources */,
+				877B8D7F19AD8E5C0002FE75 /* RDVTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

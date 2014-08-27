@@ -8,16 +8,79 @@
 
 #import "ALIENAppDelegate.h"
 
+#import "RDVTabBarController.h"
+#import "RDVTabBarItem.h"
+#import "ALIENFirstTabController.h"
+#import "ALIENSecondTabController.h"
+#import "ALIENThirdTabController.h"
+#import "ALIENFourthTabController.h"
+
+
+
+
 @implementation ALIENAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    
+    self.window.rootViewController =[self setupViewControllers];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
+#pragma mark - RDVTabBarController setup
+
+-(UIViewController *)setupViewControllers {
+    
+    UIStoryboard *myStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    
+    ALIENFirstTabController *first = [myStoryBoard instantiateViewControllerWithIdentifier:@"ALIENFirstTabController"];
+    UINavigationController *firstNavgationController = [[UINavigationController alloc] initWithRootViewController:first];
+    
+    ALIENSecondTabController *second = [myStoryBoard instantiateViewControllerWithIdentifier:@"ALIENSecondTabController"];
+    UINavigationController *secondNavgationController = [[UINavigationController alloc] initWithRootViewController:second];
+    
+    ALIENThirdTabController *third = [myStoryBoard instantiateViewControllerWithIdentifier:@"ALIENThirdTabController"];
+    UINavigationController *thirdNavgationController = [[UINavigationController alloc] initWithRootViewController:third];
+    
+    ALIENFourthTabController *fourth = [myStoryBoard instantiateViewControllerWithIdentifier:@"ALIENFourthTabController"];
+     UINavigationController *fourthNavgationController = [[UINavigationController alloc] initWithRootViewController:fourth];
+    
+    RDVTabBarController *tabBarController = [[RDVTabBarController alloc] init];
+    tabBarController.viewControllers = @[firstNavgationController,secondNavgationController,thirdNavgationController,fourthNavgationController];
+    tabBarController.selectedIndex = 0;
+    
+    [self customizeTabBarForController:tabBarController];
+    
+    
+    
+    UIViewController *viewController =  tabBarController;
+    return viewController;
+
+}
+
+- (void)customizeTabBarForController:(RDVTabBarController *)tabBarController {
+    UIImage *finishedImage = [UIImage imageNamed:@"tabBarItemBG"];
+    UIImage *unfinishedImage = [UIImage imageNamed:@"tabBarItemBG"];
+    NSArray *tabBarItemImages = @[@"first", @"second", @"third",@"fourth"];
+    
+    NSInteger index = 0;
+    
+    for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
+        [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
+        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_selected",
+                                                      [tabBarItemImages objectAtIndex:index]]];
+        UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_normal",
+                                                        [tabBarItemImages objectAtIndex:index]]];
+        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        
+        index++;
+    }
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
